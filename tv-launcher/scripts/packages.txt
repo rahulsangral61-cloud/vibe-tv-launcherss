@@ -1,0 +1,17 @@
+# Packages that debloat.sh will remove for the current user (reversible, see README).
+# One package per line. Lines starting with # are ignored.
+# Packages that are not installed on your TV are skipped automatically.
+#
+# HOW TO BUILD YOUR LIST
+#   1. ./debloat.sh audit        (writes packages-dump.txt with everything on your Vu TV)
+#   2. Look through the file, copy the apps you do not want below.
+#   3. ./debloat.sh apply
+#
+# Do NOT guess. If you are unsure what a package does, leave it alone.
+
+# --- Generic Google extras (safe on most Android TV / Google TV builds) ---
+com.google.android.videos
+com.google.android.youtube.tvmusic
+
+# --- Add Vu-specific ad / promo / demo apps here after running `audit` ---
+# com.example.vu.ads
